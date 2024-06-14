@@ -1,7 +1,7 @@
 """
                         ---usb---
-                GP00 1  |o     o| -1  VBUS 
-                GP01 2  |o     o| -2  VSYS
+PIN_I2C_SDA ->  GP00 1  |o     o| -1  VBUS 
+PIN_I2C_SCL ->  GP01 2  |o     o| -2  VSYS
                 GND  3  |o     o| -3  GND 
                 GP02 4  |o     o| -4  3V3_EN    - DO NOT USE
                 GP03 5  |o     o| -5  3V3(OUT)
@@ -24,6 +24,8 @@
 """
 
 class Pico:
+    PIN_I2C_SDA = 0 # GP00
+    PIN_I2C_SCL = 1 # GP01
     PIN_SOILHUMIDITY = 15   # GP 15
     
     
