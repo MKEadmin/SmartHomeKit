@@ -6,6 +6,9 @@ if sys.platform != 'rp2': # raspian pico
     quit()
     
 from machine import Pin
+from pico_connections import Pico
+
+sensor = Pin(Pico.PIN_SOILHUMIDITY, Pin.IN)
 
 def getValue():
     return 42
